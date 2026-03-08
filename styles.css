@@ -351,3 +351,37 @@ grid-template-columns:repeat(2,1fr);
 }
 
 }
+
+.termite-stats{
+padding:70px 20px;
+text-align:center;
+background:#f7f7f7;
+}
+
+.stats-intro{
+max-width:700px;
+margin:0 auto 40px;
+font-size:18px;
+color:#444;
+}
+
+.stats-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+max-width:1000px;
+margin:auto;
+}
+
+.stat-card{
+background:white;
+padding:25px 20px;
+border-radius:14px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.stat-card h3{
+font-size:36px;
+color:#1E5A35;
+margin-bottom:8px;
+}
