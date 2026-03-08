@@ -385,3 +385,132 @@ font-size:36px;
 color:#1E5A35;
 margin-bottom:8px;
 }
+
+/* ----------------------------- */
+/* COMMERCIAL PEST CONTROL PAGE */
+/* ----------------------------- */
+
+.commercial-intro-section{
+max-width:900px;
+margin:auto;
+text-align:center;
+font-size:18px;
+}
+
+
+/* BUSINESS IMPACT / STATISTICS */
+
+.business-risk-section{
+background:#f7f7f7;
+text-align:center;
+padding:70px 20px;
+}
+
+.business-risk-intro{
+max-width:720px;
+margin:0 auto 40px;
+font-size:18px;
+color:#444;
+}
+
+.business-risk-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+max-width:1000px;
+margin:auto;
+}
+
+.risk-card{
+background:white;
+padding:25px 20px;
+border-radius:14px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+text-align:center;
+transition:.2s;
+}
+
+.risk-card:hover{
+transform:translateY(-4px);
+box-shadow:0 12px 30px rgba(0,0,0,.12);
+}
+
+.risk-card h3{
+font-size:36px;
+color:#1E5A35;
+margin-bottom:8px;
+}
+
+
+/* INDUSTRIES GRID */
+
+.commercial-industries-section{
+text-align:center;
+}
+
+.industry-cards-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:18px;
+max-width:1000px;
+margin:40px auto 0;
+}
+
+.industry-tile{
+background:white;
+padding:18px;
+border-radius:12px;
+box-shadow:0 6px 18px rgba(0,0,0,.08);
+font-weight:600;
+transition:.2s;
+}
+
+.industry-tile:hover{
+transform:translateY(-4px);
+box-shadow:0 10px 26px rgba(0,0,0,.12);
+}
+
+
+/* IPM + SERVICE SECTIONS */
+
+.ipm-section{
+max-width:900px;
+margin:auto;
+text-align:center;
+font-size:18px;
+}
+
+.recurring-service-section{
+max-width:900px;
+margin:auto;
+text-align:center;
+font-size:18px;
+}
+
+
+/* COMMERCIAL FAQ */
+
+.commercial-faq-section{
+max-width:900px;
+margin:auto;
+}
+
+.commercial-faq-section h3{
+margin-top:30px;
+color:#1E5A35;
+}
+
+
+/* MOBILE IMPROVEMENTS */
+
+@media (max-width:768px){
+
+.business-risk-grid{
+grid-template-columns:1fr;
+}
+
+.industry-cards-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
