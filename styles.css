@@ -162,53 +162,40 @@ margin-bottom:8px;
 /* INDUSTRIES */
 
 .industries-served{
-background:#f7f7f7;
-text-align:center;
-padding:70px 20px;
-}
-
-.industries-served h2{
-margin-bottom:10px;
+  background:#f7f7f7;
+  text-align:center;
+  padding:70px 20px;
 }
 
 .industries-intro{
-max-width:720px;
-margin:auto;
-margin-bottom:40px;
-font-size:18px;
-color:#444;
+  max-width:720px;
+  margin:0 auto 40px;
+  font-size:18px;
+  color:#444;
 }
 
-/* industry grid layout */
-
-.industry-list{
-list-style:none;
-padding:0;
-margin:auto;
-max-width:1000px;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-gap:18px;
+.industry-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:16px;
+  max-width:1000px;
+  margin:0 auto;
 }
 
-/* industry tiles */
-
-.industry-list li{
-background:white;
-padding:18px 20px;
-border-radius:12px;
-box-shadow:0 5px 16px rgba(0,0,0,.08);
-font-weight:600;
-transition:.2s;
+.industry-card{
+  background:white;
+  padding:18px 20px;
+  border-radius:12px;
+  box-shadow:0 5px 16px rgba(0,0,0,.08);
+  font-weight:600;
+  text-align:center;
+  transition:.2s;
 }
 
-/* hover effect */
-
-.industry-list li:hover{
-transform:translateY(-4px);
-box-shadow:0 10px 24px rgba(0,0,0,.12);
+.industry-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 10px 24px rgba(0,0,0,.12);
 }
-
 
 /* REVIEWS */
 
