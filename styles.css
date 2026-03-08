@@ -514,3 +514,9 @@ grid-template-columns:repeat(2,1fr);
 }
 
 }
+
+.card-link{
+text-decoration:none;
+color:inherit;
+display:block;
+}
