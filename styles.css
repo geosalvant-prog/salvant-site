@@ -516,7 +516,17 @@ grid-template-columns:repeat(2,1fr);
 }
 
 .card-link{
+display:block;
 text-decoration:none;
 color:inherit;
-display:block;
+}
+
+.card-link h3{
+color:#222;
+text-decoration:none;
+}
+
+.card-link p{
+color:#444;
+text-decoration:none;
 }
