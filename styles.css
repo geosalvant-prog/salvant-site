@@ -35,7 +35,7 @@ font-weight:bold;
 .hero{
 background:
 linear-gradient(rgba(30,90,53,.85),rgba(47,122,62,.85)),
-url("images/hero.jpg");
+url("images/hero.PNG");
 background-size:cover;
 background-position:center;
 color:white;
