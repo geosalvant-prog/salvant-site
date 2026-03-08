@@ -343,3 +343,11 @@ padding:12px 24px;
 }
 
 }
+
+@media (max-width:768px){
+
+.industry-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
