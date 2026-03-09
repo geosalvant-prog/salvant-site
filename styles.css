@@ -6,16 +6,22 @@ margin:0;
 background:#f4f6f5;
 color:#222;
 line-height:1.6;
+padding-bottom:80px;
 }
 
 h1,h2,h3{
 margin-top:0;
+line-height:1.2;
 }
 
 section{
 padding:70px 20px;
 }
 
+img{
+max-width:100%;
+height:auto;
+}
 
 /* TOP BAR */
 
@@ -33,6 +39,7 @@ z-index:999;
 
 .logo{
 height:60px;
+display:block;
 }
 
 .callbtn{
@@ -42,8 +49,8 @@ padding:10px 16px;
 border-radius:8px;
 text-decoration:none;
 font-weight:600;
+transition:.25s;
 }
-
 
 /* HERO */
 
@@ -53,6 +60,7 @@ linear-gradient(rgba(30,90,53,.85),rgba(47,122,62,.85)),
 url("images/hero.PNG");
 background-size:cover;
 background-position:center;
+background-repeat:no-repeat;
 color:white;
 text-align:center;
 padding:120px 20px;
@@ -65,6 +73,9 @@ margin-bottom:12px;
 
 .hero p{
 font-size:18px;
+max-width:800px;
+margin-left:auto;
+margin-right:auto;
 }
 
 .cta{
@@ -85,7 +96,6 @@ transform:translateY(-2px);
 box-shadow:0 10px 22px rgba(0,0,0,.18);
 }
 
-
 /* LOCATION */
 
 .location{
@@ -94,7 +104,6 @@ margin:auto;
 text-align:center;
 font-size:18px;
 }
-
 
 /* STATS */
 
@@ -119,7 +128,6 @@ color:#1E5A35;
 font-size:32px;
 }
 
-
 /* SERVICES */
 
 .services{
@@ -135,12 +143,22 @@ gap:25px;
 margin-top:35px;
 }
 
+.card-link{
+display:block;
+text-decoration:none;
+color:inherit;
+height:100%;
+}
+
 .card{
 background:white;
 border-radius:14px;
 box-shadow:0 6px 20px rgba(0,0,0,.08);
 padding:20px;
 transition:.25s;
+height:100%;
+display:flex;
+flex-direction:column;
 }
 
 .card:hover{
@@ -150,51 +168,25 @@ box-shadow:0 12px 30px rgba(0,0,0,.12);
 
 .card img{
 width:100%;
+height:220px;
+object-fit:cover;
 border-radius:10px;
 margin-bottom:12px;
+display:block;
 }
 
 .card h3{
 margin-bottom:8px;
 }
 
-
-/* INDUSTRIES */
-
-.industries-served{
-  background:#f7f7f7;
-  text-align:center;
-  padding:70px 20px;
+.card-link h3{
+color:#222;
+text-decoration:none;
 }
 
-.industries-intro{
-  max-width:720px;
-  margin:0 auto 40px;
-  font-size:18px;
-  color:#444;
-}
-
-.industry-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:16px;
-  max-width:1000px;
-  margin:0 auto;
-}
-
-.industry-card{
-  background:white;
-  padding:18px 20px;
-  border-radius:12px;
-  box-shadow:0 5px 16px rgba(0,0,0,.08);
-  font-weight:600;
-  text-align:center;
-  transition:.2s;
-}
-
-.industry-card:hover{
-  transform:translateY(-4px);
-  box-shadow:0 10px 24px rgba(0,0,0,.12);
+.card-link p{
+color:#444;
+text-decoration:none;
 }
 
 /* REVIEWS */
@@ -206,11 +198,9 @@ text-align:center;
 
 .review{
 max-width:600px;
-margin:auto;
-margin-bottom:20px;
+margin:0 auto 20px;
 font-style:italic;
 }
-
 
 /* PEST INFO */
 
@@ -222,7 +212,6 @@ margin:auto;
 .info ul{
 padding-left:20px;
 }
-
 
 /* AREAS */
 
@@ -236,7 +225,6 @@ text-align:center;
 list-style-position:inside;
 padding:0;
 }
-
 
 /* MAP */
 
@@ -252,7 +240,6 @@ border-radius:14px;
 box-shadow:0 6px 20px rgba(0,0,0,.1);
 }
 
-
 /* KEYWORDS */
 
 .keywords{
@@ -261,6 +248,10 @@ text-align:center;
 font-size:17px;
 }
 
+.keywords p{
+max-width:900px;
+margin:auto;
+}
 
 /* CTA SECTION */
 
@@ -275,7 +266,6 @@ padding:80px 20px;
 margin-bottom:10px;
 }
 
-
 /* FOOTER */
 
 footer{
@@ -284,7 +274,6 @@ color:white;
 text-align:center;
 padding:30px;
 }
-
 
 /* STICKY CALL BAR */
 
@@ -303,8 +292,8 @@ z-index:999;
 color:white;
 font-weight:bold;
 text-decoration:none;
+transition:.25s;
 }
-
 
 /* FLOATING QUOTE BUTTON */
 
@@ -319,12 +308,46 @@ border-radius:30px;
 font-weight:bold;
 text-decoration:none;
 box-shadow:0 6px 18px rgba(0,0,0,.25);
+transition:.25s;
 }
 
+/* INTERACTION STATES */
+
+.callbtn:hover,
+.quote-btn:hover,
+.callbar a:hover{
+filter:brightness(.98);
+}
+
+.callbtn:focus-visible,
+.cta:focus-visible,
+.quote-btn:focus-visible,
+.callbar a:focus-visible,
+.card-link:focus-visible{
+outline:3px solid #E6DFC2;
+outline-offset:3px;
+}
 
 /* MOBILE */
 
 @media (max-width:768px){
+
+section{
+padding:55px 18px;
+}
+
+.topbar{
+padding:10px 14px;
+}
+
+.logo{
+height:46px;
+}
+
+.callbtn{
+padding:9px 14px;
+font-size:15px;
+}
 
 .hero{
 padding:90px 20px;
@@ -334,176 +357,23 @@ padding:90px 20px;
 font-size:30px;
 }
 
-.logo{
-height:50px;
+.hero p{
+font-size:17px;
 }
 
 .cta{
 padding:12px 24px;
 }
 
+.quote-btn{
+right:14px;
+bottom:84px;
+padding:12px 18px;
 }
-
-@media (max-width:768px){
 
 .industry-grid{
 grid-template-columns:repeat(2,1fr);
 }
-
-}
-
-.termite-stats{
-padding:70px 20px;
-text-align:center;
-background:#f7f7f7;
-}
-
-.stats-intro{
-max-width:700px;
-margin:0 auto 40px;
-font-size:18px;
-color:#444;
-}
-
-.stats-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-max-width:1000px;
-margin:auto;
-}
-
-.stat-card{
-background:white;
-padding:25px 20px;
-border-radius:14px;
-box-shadow:0 8px 20px rgba(0,0,0,.08);
-}
-
-.stat-card h3{
-font-size:36px;
-color:#1E5A35;
-margin-bottom:8px;
-}
-
-/* ----------------------------- */
-/* COMMERCIAL PEST CONTROL PAGE */
-/* ----------------------------- */
-
-.commercial-intro-section{
-max-width:900px;
-margin:auto;
-text-align:center;
-font-size:18px;
-}
-
-
-/* BUSINESS IMPACT / STATISTICS */
-
-.business-risk-section{
-background:#f7f7f7;
-text-align:center;
-padding:70px 20px;
-}
-
-.business-risk-intro{
-max-width:720px;
-margin:0 auto 40px;
-font-size:18px;
-color:#444;
-}
-
-.business-risk-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-max-width:1000px;
-margin:auto;
-}
-
-.risk-card{
-background:white;
-padding:25px 20px;
-border-radius:14px;
-box-shadow:0 8px 20px rgba(0,0,0,.08);
-text-align:center;
-transition:.2s;
-}
-
-.risk-card:hover{
-transform:translateY(-4px);
-box-shadow:0 12px 30px rgba(0,0,0,.12);
-}
-
-.risk-card h3{
-font-size:36px;
-color:#1E5A35;
-margin-bottom:8px;
-}
-
-
-/* INDUSTRIES GRID */
-
-.commercial-industries-section{
-text-align:center;
-}
-
-.industry-cards-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:18px;
-max-width:1000px;
-margin:40px auto 0;
-}
-
-.industry-tile{
-background:white;
-padding:18px;
-border-radius:12px;
-box-shadow:0 6px 18px rgba(0,0,0,.08);
-font-weight:600;
-transition:.2s;
-}
-
-.industry-tile:hover{
-transform:translateY(-4px);
-box-shadow:0 10px 26px rgba(0,0,0,.12);
-}
-
-
-/* IPM + SERVICE SECTIONS */
-
-.ipm-section{
-max-width:900px;
-margin:auto;
-text-align:center;
-font-size:18px;
-}
-
-.recurring-service-section{
-max-width:900px;
-margin:auto;
-text-align:center;
-font-size:18px;
-}
-
-
-/* COMMERCIAL FAQ */
-
-.commercial-faq-section{
-max-width:900px;
-margin:auto;
-}
-
-.commercial-faq-section h3{
-margin-top:30px;
-color:#1E5A35;
-}
-
-
-/* MOBILE IMPROVEMENTS */
-
-@media (max-width:768px){
 
 .business-risk-grid{
 grid-template-columns:1fr;
@@ -512,21 +382,4 @@ grid-template-columns:1fr;
 .industry-cards-grid{
 grid-template-columns:repeat(2,1fr);
 }
-
-}
-
-.card-link{
-display:block;
-text-decoration:none;
-color:inherit;
-}
-
-.card-link h3{
-color:#222;
-text-decoration:none;
-}
-
-.card-link p{
-color:#444;
-text-decoration:none;
 }
