@@ -1,0 +1,145 @@
+/* GLOBAL */
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;margin:0;background:#f4f6f5;color:#222;line-height:1.6;padding-bottom:80px;}
+h1,h2,h3{margin-top:0;line-height:1.2;}
+section{padding:70px 20px;}
+img{max-width:100%;height:auto;}
+
+/* TOP BAR */
+.topbar{display:flex;justify-content:space-between;align-items:center;background:white;padding:12px 20px;box-shadow:0 3px 10px rgba(0,0,0,.05);position:sticky;top:0;z-index:999;}
+.logo{height:60px;display:block;}
+.callbtn{background:#1E5A35;color:white;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600;transition:.25s;}
+
+/* HERO */
+.hero{background:linear-gradient(rgba(30,90,53,.85),rgba(47,122,62,.85)),url("../images/hero.PNG");background-size:cover;background-position:center;background-repeat:no-repeat;color:white;text-align:center;padding:120px 20px;}
+.hero h1{font-size:38px;margin-bottom:12px;}
+.hero p{font-size:18px;max-width:800px;margin-left:auto;margin-right:auto;}
+
+/* HERO TRUST BAR */
+.hero-trust{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;margin-top:20px;margin-bottom:6px;}
+.hero-trust span{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.35);color:white;padding:6px 14px;border-radius:30px;font-size:14px;font-weight:600;}
+
+/* CTA BUTTON */
+.cta{display:inline-block;margin-top:25px;background:#E6DFC2;color:#1E5A35;padding:14px 30px;border-radius:40px;text-decoration:none;font-weight:700;box-shadow:0 6px 18px rgba(0,0,0,.15);transition:.25s;}
+.cta:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(0,0,0,.18);}
+
+/* LOCATION / TEXT SECTIONS */
+.location{max-width:900px;margin:auto;text-align:center;font-size:18px;}
+
+/* STATS */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;max-width:900px;margin:auto;}
+.stat{background:white;padding:30px;border-radius:14px;box-shadow:0 8px 24px rgba(0,0,0,.08);text-align:center;}
+.stat h2{color:#1E5A35;font-size:32px;}
+
+/* SERVICES GRID */
+.services{max-width:1100px;margin:auto;text-align:center;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;margin-top:35px;}
+.card-link{display:block;text-decoration:none;color:inherit;height:100%;}
+.card{background:white;border-radius:14px;box-shadow:0 6px 20px rgba(0,0,0,.08);padding:20px;transition:.25s;height:100%;display:flex;flex-direction:column;}
+.card:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(0,0,0,.12);}
+.card img{width:100%;height:220px;object-fit:cover;border-radius:10px;margin-bottom:12px;display:block;}
+.card h3{margin-bottom:8px;}
+.card-link h3{color:#222;}
+.card-link p{color:#444;}
+
+/* INFO LIST */
+.info{max-width:900px;margin:auto;}
+.info ul{padding-left:20px;}
+
+/* SERVICE AREA */
+.service-area{max-width:1000px;margin:auto;text-align:center;}
+.service-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:30px;}
+.area-card{background:white;padding:20px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,.08);}
+.area-card h3{color:#1E5A35;margin-bottom:10px;}
+.area-card ul{list-style:none;padding:0;margin:0;}
+.area-card li{padding:4px 0;font-size:16px;}
+
+/* TRUST SECTION */
+.trust-section{max-width:1000px;margin:auto;text-align:center;padding:70px 20px;}
+.trust-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;margin-top:35px;}
+.trust-card{background:white;padding:28px 22px;border-radius:14px;box-shadow:0 8px 22px rgba(0,0,0,.08);text-align:left;}
+.trust-icon{font-size:32px;margin-bottom:12px;}
+.trust-card h3{color:#1E5A35;margin-bottom:8px;font-size:17px;}
+.trust-card p{color:#444;font-size:15px;margin:0;}
+
+/* TESTIMONIALS */
+.testimonials{max-width:1000px;margin:auto;text-align:center;padding:70px 20px;}
+.testimonial-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;margin-top:40px;}
+.testimonial-card{background:white;padding:25px;border-radius:14px;box-shadow:0 8px 22px rgba(0,0,0,.08);text-align:left;}
+.testimonial-stars{color:#f2b01e;font-size:18px;margin-bottom:10px;}
+.testimonial-name{font-weight:700;margin-top:15px;color:#1E5A35;}
+
+/* TERMITE STEPS */
+.inspection-steps{max-width:900px;margin:auto;text-align:center;}
+.step-grid{display:grid;grid-template-columns:1fr;gap:25px;margin-top:35px;}
+.step-card{background:white;padding:28px;border-radius:14px;box-shadow:0 8px 22px rgba(0,0,0,.08);}
+.step-number{font-size:14px;letter-spacing:1px;color:#888;font-weight:600;margin-bottom:8px;}
+.step-card h3{color:#1E5A35;margin-bottom:10px;}
+.step-arrow{font-size:28px;color:#1E5A35;}
+
+/* FAQ */
+.faq-section{max-width:900px;margin:auto;padding:70px 20px;}
+.faq-section h2{text-align:center;margin-bottom:35px;}
+.faq-item{background:white;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,.08);margin-bottom:15px;overflow:hidden;transition:.25s;}
+.faq-question{padding:18px 22px;font-weight:600;cursor:pointer;position:relative;}
+.faq-question::after{content:"+";position:absolute;right:20px;font-size:22px;color:#1E5A35;}
+.faq-answer{max-height:0;overflow:hidden;padding:0 22px;transition:max-height .35s ease;color:#444;line-height:1.6;}
+.faq-item.active .faq-answer{max-height:220px;padding-bottom:18px;}
+.faq-item.active .faq-question::after{content:"–";}
+
+/* COMMERCIAL SECTIONS */
+.commercial-intro-section,.ipm-section,.recurring-service-section{max-width:900px;margin:auto;text-align:center;font-size:18px;}
+.business-risk-section{max-width:1000px;margin:auto;text-align:center;padding:70px 20px;}
+.business-risk-intro{font-size:17px;max-width:800px;margin:0 auto 30px;}
+.business-risk-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;}
+.risk-card{background:white;padding:28px;border-radius:14px;box-shadow:0 8px 24px rgba(0,0,0,.08);text-align:center;}
+.risk-card h3{color:#1E5A35;font-size:28px;margin-bottom:8px;}
+.commercial-industries-section{max-width:1000px;margin:auto;text-align:center;padding:70px 20px;}
+.industry-cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px;margin-top:30px;}
+.industry-tile{background:white;padding:18px 14px;border-radius:10px;box-shadow:0 6px 16px rgba(0,0,0,.08);font-weight:600;color:#1E5A35;font-size:15px;}
+
+/* REVIEWS (legacy FAQ style) */
+.reviews{background:#f7f7f7;text-align:center;}
+.review{max-width:600px;margin:0 auto 20px;font-style:italic;}
+
+/* CTA SECTION */
+.cta-section{background:#1E5A35;color:white;text-align:center;padding:80px 20px;}
+.cta-section h2{margin-bottom:10px;}
+.cta-section .cta{color:#1E5A35;}
+
+/* FOOTER */
+footer{background:#1E5A35;color:white;text-align:center;padding:30px;}
+footer a{color:#E6DFC2;}
+
+/* STICKY CALL BAR */
+.callbar{position:fixed;bottom:0;left:0;right:0;background:#1E5A35;padding:14px;text-align:center;z-index:999;}
+.callbar a{color:white;font-weight:bold;text-decoration:none;transition:.25s;}
+
+/* FLOATING QUOTE BUTTON */
+.quote-btn{position:fixed;right:20px;bottom:90px;background:#2F7A3E;color:white;padding:14px 22px;border-radius:30px;font-weight:bold;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.25);transition:.25s;}
+
+/* FOCUS & HOVER */
+.callbtn:hover,.quote-btn:hover,.callbar a:hover{filter:brightness(.92);}
+.callbtn:focus-visible,.cta:focus-visible,.quote-btn:focus-visible,.callbar a:focus-visible,.card-link:focus-visible{outline:3px solid #E6DFC2;outline-offset:3px;}
+
+/* LINKS */
+a{color:#1E5A35;text-decoration:none;transition:.2s;}
+a:hover{color:#2F7A3E;text-decoration:underline;}
+a:visited{color:#1E5A35;}
+
+/* MOBILE */
+@media(max-width:768px){
+  section{padding:55px 18px;}
+  .topbar{padding:10px 14px;}
+  .logo{height:46px;}
+  .callbtn{padding:9px 14px;font-size:15px;}
+  .hero{padding:90px 20px;}
+  .hero h1{font-size:28px;}
+  .hero p{font-size:16px;}
+  .cta{padding:12px 24px;}
+  .quote-btn{right:14px;bottom:84px;padding:12px 18px;}
+  .hero-trust{gap:8px;}
+  .hero-trust span{font-size:12px;padding:5px 10px;}
+  .trust-grid{grid-template-columns:1fr;}
+  .industry-cards-grid{grid-template-columns:repeat(2,1fr);}
+  .business-risk-grid{grid-template-columns:1fr;}
+}
